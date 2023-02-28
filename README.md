@@ -13,7 +13,7 @@ However, if one writer (let's say p1) is editing or writing the file, it should 
 
 There are several variations of the problem, which includes:
 
-- **First readers-writers problem:** It stipulates that no reader may be held in limbo unless the writer has obtained permission to use the shared object. In other words, no reader should hold up other readers because a writer is waiting**.**
+- **First readers-writers problem:** It stipulates that no reader may be held in limbo unless the writer has obtained permission to use the shared object. In other words, no reader should hold up other readers because a writer is waiting.
 - **Second readers-writers problem:** As soon as a writer is prepared, it must begin writing as soon as feasible. In other words, if a writer is awaiting access to an object, no additional readers may begin reading.
 
 A solution to either problem may result in starvation. In the first case, writers may starve; in the second case, readers may starve.
